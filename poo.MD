@@ -1,0 +1,8 @@
+- Personne 
+    - Caracteristiques
+        - Nom   
+        - Age
+        - Poids
+    - Actions
+        - Marcher
+        - Danser
