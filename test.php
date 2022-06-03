@@ -2,6 +2,28 @@
 
 class A
 {
+    private static $attribut1 = 8;
+    // protected static $attribut1 = 8;
+    public function methode1()
+    {
+        echo self::$attribut1; // 8
+        echo static::$attribut1; // 4
+    }
+}
+
+class B extends A
+{
+    public static $attribut1 = 4;
+    public function methode1()
+    {
+        parent::methode1();
+    }
+}
+
+(new B)->methode1();
+
+class C
+{
     public static $x = 4;
     public function toto()
     {
@@ -9,7 +31,7 @@ class A
     }
 }
 
-class B extends A
+class D extends C
 {
     public static $x = 5;
     public function tata()
@@ -21,4 +43,4 @@ class B extends A
     }
 }
 
-(new B)->tata();
+// (new D)->tata();
