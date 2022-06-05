@@ -23,7 +23,7 @@ class ComposerStaticInite7068b3fc805e1913c929c83678c4c6d
     public static $classMap = array (
         'Acme\\League' => __DIR__ . '/../..' . '/src/League.php',
         'Acme\\Person' => __DIR__ . '/../..' . '/src/Person.php',
-        'Acme\\Team' => __DIR__ . '/../..' . '/src/Team.php',
+        'Acme\\Teams\\Team' => __DIR__ . '/../..' . '/src/Teams/Team.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 

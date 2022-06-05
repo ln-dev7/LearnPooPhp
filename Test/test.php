@@ -1,12 +1,14 @@
 <?php
 
-require 'vendor/autoload.php';
+use Acme\{Person, League};
+use Acme\Teams\Team;
+// use Acme\League as Ligue; // ca nous permet de remplacer League par Ligue tout en conservant ses proprites
 
-$leonel = new Acme\Person("Leonel Ngoya");
-$ange = new Acme\Person("Ange Jipgang");
+$leonel = new Person("Leonel Ngoya");
+$ange = new Person("Ange Jipgang");
 
-$liverpool = new Acme\Team("Liverpool");
-$spurs = new Acme\Team("Tottenham");
+$liverpool = new Team("Liverpool");
+$spurs = new Team("Tottenham");
 
 $leonel->favorite($spurs);
 $leonel->favorite($liverpool);
@@ -16,7 +18,7 @@ echo $liverpool->getName() . ' a ' . $liverpool->getNombreFans() . " fan(s) \n";
 
 echo $spurs->getName() . ' a ' . $spurs->getNombreFans() . " fan(s) \n";
 
-$PLeague = new Acme\League("Premiere League");
+$PLeague = new League("Premiere League");
 $PLeague->addTeam($liverpool);
 $PLeague->addTeam($spurs);
 
