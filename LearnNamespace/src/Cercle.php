@@ -1,6 +1,7 @@
 <?php
 
-class Cercle implements Forme {
+class Cercle implements Forme
+{
     private $rayon;
 
     public function __construct($rayon)

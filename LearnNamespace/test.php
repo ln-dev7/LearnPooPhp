@@ -4,6 +4,7 @@ require 'vendor/autoload.php';
 
 (new Chien)->communiquer();
 (new Chat)->communiquer();
+echo Animal::PATTES . "\n";
 
 $cercle = new Cercle(5);
 $carre = new Carre(3);
