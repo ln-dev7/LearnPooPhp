@@ -4,8 +4,12 @@ use Acme\{Person, League};
 use Acme\Teams\Team;
 // use Acme\League as Ligue; // ca nous permet de remplacer League par Ligue tout en conservant ses proprites
 
-$leonel = new Person("Leonel Ngoya");
-$ange = new Person("Ange Jipgang");
+echo random_number() . "\n";
+
+new Song;
+
+$leonel = new Person("Leonel Ngoya", new Song);
+$ange = new Person("Ange Jipgang", new Song);
 
 $liverpool = new Team("Liverpool");
 $spurs = new Team("Tottenham");

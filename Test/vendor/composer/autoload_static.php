@@ -6,6 +6,10 @@ namespace Composer\Autoload;
 
 class ComposerStaticInite7068b3fc805e1913c929c83678c4c6d
 {
+    public static $files = array (
+        '48483d6c44b015b6d6d681c009d084a7' => __DIR__ . '/../..' . '/src/helpers.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'A' => 
         array (
@@ -25,6 +29,7 @@ class ComposerStaticInite7068b3fc805e1913c929c83678c4c6d
         'Acme\\Person' => __DIR__ . '/../..' . '/src/Person.php',
         'Acme\\Teams\\Team' => __DIR__ . '/../..' . '/src/Teams/Team.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Song' => __DIR__ . '/../..' . '/Song.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

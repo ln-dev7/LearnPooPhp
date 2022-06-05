@@ -3,12 +3,13 @@
 namespace Acme;
 
 use Acme\Teams\Team;
+use Song;
 
 class Person
 {
     private $name;
 
-    public function __construct($name)
+    public function __construct($name, Song $songFavori)
     {
         $this->name = $name;
     }

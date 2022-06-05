@@ -10,4 +10,5 @@ return array(
     'Acme\\Person' => $baseDir . '/src/Person.php',
     'Acme\\Teams\\Team' => $baseDir . '/src/Teams/Team.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'Song' => $baseDir . '/Song.php',
 );
